@@ -1,16 +1,16 @@
 {
-  "name": "mdfetch",
+  "name": "markurl",
   "version": "0.1.0",
   "description": "URL in, clean Markdown + structured metadata out. Built for AI agent tool use.",
   "license": "MIT",
   "author": "Nikhil Patnis <nkpatnis@gmail.com>",
-  "homepage": "https://github.com/nkpatnis/mdfetch#readme",
+  "homepage": "https://github.com/nkpatnis/markurl#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nkpatnis/mdfetch.git"
+    "url": "git+https://github.com/nkpatnis/markurl.git"
   },
   "bugs": {
-    "url": "https://github.com/nkpatnis/mdfetch/issues"
+    "url": "https://github.com/nkpatnis/markurl/issues"
   },
   "keywords": [
     "markdown",
@@ -37,7 +37,7 @@
     }
   },
   "bin": {
-    "mdfetch-mcp": "./dist/mcp.js"
+    "markurl-mcp": "dist/mcp.js"
   },
   "files": [
     "dist"

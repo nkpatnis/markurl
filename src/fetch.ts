@@ -3,7 +3,7 @@ import { cacheKey, getDefaultCache, type FetchCache } from "./cache.js";
 import { getDefaultLimiter, hostOf, type RateLimiter } from "./ratelimit.js";
 
 const DEFAULT_UA =
-  "mdfetch/0.1 (+https://github.com/nkpatnis/mdfetch) compatible AI-agent extractor";
+  "markurl/0.1 (+https://github.com/nkpatnis/mdfetch) compatible AI-agent extractor";
 
 export interface FetchedPage {
   finalUrl: string;

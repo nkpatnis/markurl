@@ -1,8 +1,8 @@
-# mdfetch
+# markurl
 
 URL in → clean Markdown + structured metadata out. Built for AI agent tool use.
 
-`mdfetch` is a small Node library that fetches a web page and returns a token-budgeted, deterministic representation suitable for stuffing into an LLM context window. Ships with an MCP server so it's usable as a tool from Claude Desktop, Claude Code, or any MCP client without writing glue code.
+`markurl` is a small Node library that fetches a web page and returns a token-budgeted, deterministic representation suitable for stuffing into an LLM context window. Ships with an MCP server so it's usable as a tool from Claude Desktop, Claude Code, or any MCP client without writing glue code.
 
 ## Why not just Readability / defuddle?
 
@@ -14,7 +14,7 @@ URL in → clean Markdown + structured metadata out. Built for AI agent tool use
 ## Install
 
 ```bash
-npm install mdfetch
+npm install markurl
 ```
 
 Requires Node 20+.
@@ -22,7 +22,7 @@ Requires Node 20+.
 ## Library usage
 
 ```ts
-import { extract } from "mdfetch";
+import { extract } from "markurl";
 
 const result = await extract("https://example.com/article", {
   maxTokens: 4000,
@@ -77,7 +77,7 @@ The Zod schema is exported as `ExtractResultSchema` if you want to validate at t
 ## MCP server
 
 ```bash
-npx mdfetch-mcp
+npx markurl-mcp
 ```
 
 Exposes a single tool, `extract`, with the same options as the library. Wire it into Claude Desktop via `claude_desktop_config.json`:
@@ -85,9 +85,9 @@ Exposes a single tool, `extract`, with the same options as the library. Wire it 
 ```json
 {
   "mcpServers": {
-    "mdfetch": {
+    "markurl": {
       "command": "npx",
-      "args": ["-y", "mdfetch-mcp"]
+      "args": ["-y", "markurl-mcp"]
     }
   }
 }
@@ -122,7 +122,7 @@ fetch (undici) → router → extractor → normalize → budget → ExtractResu
 Fetched HTML is cached by URL with a default 5-minute TTL and 200-entry cap. Swap in your own store:
 
 ```ts
-import { extract, type FetchCache } from "mdfetch";
+import { extract, type FetchCache } from "markurl";
 
 const redisCache: FetchCache = {
   get(key) { /* ... */ },

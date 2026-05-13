@@ -8,7 +8,7 @@ import {
 import { extract } from "./index.js";
 
 const server = new Server(
-  { name: "mdfetch", version: "0.1.0" },
+  { name: "markurl", version: "0.1.0" },
   { capabilities: { tools: {} } },
 );
 
