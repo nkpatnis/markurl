@@ -2,6 +2,27 @@
   "name": "mdfetch",
   "version": "0.1.0",
   "description": "URL in, clean Markdown + structured metadata out. Built for AI agent tool use.",
+  "license": "MIT",
+  "author": "Nikhil Patnis <nkpatnis@gmail.com>",
+  "homepage": "https://github.com/nkpatnis/mdfetch#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkpatnis/mdfetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nkpatnis/mdfetch/issues"
+  },
+  "keywords": [
+    "markdown",
+    "extract",
+    "readability",
+    "scraping",
+    "ai",
+    "llm",
+    "agent",
+    "mcp",
+    "tool-use"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
