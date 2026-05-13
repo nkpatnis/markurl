@@ -1,5 +1,5 @@
 [![MCPScore](https://timeahead.in/api/v1/mcp/badge/markurl.svg)](https://timeahead.in/mcp/markurl)
-
+[![Socket Badge](https://badge.socket.dev/npm/package/markurl/0.1.0)](https://badge.socket.dev/npm/package/markurl/0.1.0)
 # markurl
 
 URL in → clean Markdown + structured metadata out. Built for AI agent tool use.
