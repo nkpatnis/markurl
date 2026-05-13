@@ -1,0 +1,57 @@
+{
+  "name": "web-extract",
+  "version": "0.1.0",
+  "description": "URL in, clean Markdown + structured metadata out. Built for AI agent tool use.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp.d.ts",
+      "import": "./dist/mcp.js"
+    }
+  },
+  "bin": {
+    "web-extract-mcp": "./dist/mcp.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "gpt-tokenizer": "^2.5.0",
+    "linkedom": "^0.18.5",
+    "turndown": "^7.2.0",
+    "undici": "^6.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/turndown": "^5.0.5",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "playwright": "^1.49.0"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  }
+}
