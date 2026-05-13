@@ -1,5 +1,5 @@
 {
-  "name": "web-extract",
+  "name": "mdfetch",
   "version": "0.1.0",
   "description": "URL in, clean Markdown + structured metadata out. Built for AI agent tool use.",
   "type": "module",
@@ -16,7 +16,7 @@
     }
   },
   "bin": {
-    "web-extract-mcp": "./dist/mcp.js"
+    "mdfetch-mcp": "./dist/mcp.js"
   },
   "files": [
     "dist"

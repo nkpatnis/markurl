@@ -8,7 +8,7 @@ import {
 import { extract } from "./index.js";
 
 const server = new Server(
-  { name: "web-extract", version: "0.1.0" },
+  { name: "mdfetch", version: "0.1.0" },
   { capabilities: { tools: {} } },
 );
 
