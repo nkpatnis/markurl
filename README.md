@@ -78,10 +78,6 @@ The Zod schema is exported as `ExtractResultSchema` if you want to validate at t
 
 ## MCP server
 
-```bash
-npx markurl-mcp
-```
-
 Exposes a single tool, `extract`, with the same options as the library. Wire it into Claude Desktop via `claude_desktop_config.json`:
 
 ```json
@@ -89,7 +85,7 @@ Exposes a single tool, `extract`, with the same options as the library. Wire it 
   "mcpServers": {
     "markurl": {
       "command": "npx",
-      "args": ["-y", "markurl-mcp"]
+      "args": ["-y", "markurl"]
     }
   }
 }
